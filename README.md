@@ -1,3 +1,5 @@
+[![run with conda](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
+[![License](https://img.shields.io/badge/licence-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ### 1. HSDecipher
 The pipeline has the custom Python scripts packages for the downstream comparative genomics analysis of highly similar duplicate genes
