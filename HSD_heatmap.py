@@ -182,11 +182,11 @@ def main(argv):
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('hsd_heatmap -f <HSD file folder> -k <KO file folder> -r <width of output heatmap> '
+            print('hsdecipher -f <HSD file folder> -k <KO file folder> -r <width of output heatmap> '
                   '-c <length of output heatmap>')
-            print('hsd_heatmap --hsd_files_path=<HSD file folder> --ko_files_path=<KO file folder>'
+            print('hsdecipher --hsd_files_path=<HSD file folder> --ko_files_path=<KO file folder>'
                   ' --row_size=<width of output heatmap> --col_size=<height of output heatmap>')
-            print('try other packages: HSD_add_on.py,HSD_batch_run.py,HSD_categories.py')
+            print('\ntry other packages: HSD_add_on.py, HSD_batch_run.py, HSD_categories.py, HSD_statistics.py')
             sys.exit(0)
         elif opt in ("-f", "--hsd_files_path"):
             hsd_files_path = arg
