@@ -178,7 +178,7 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv, "hf:k:r:c:", ["hsd_files_path=", "ko_files_path=", "row_size=", "col_size="])
     except getopt.GetoptError as e:
-        print(str(e) + '. Use hsd_heatmap -h to see argument options')
+        print(str(e) + '. Use hsdecipher -h to see argument options')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
@@ -186,6 +186,7 @@ def main(argv):
                   '-c <length of output heatmap>')
             print('hsd_heatmap --hsd_files_path=<HSD file folder> --ko_files_path=<KO file folder>'
                   ' --row_size=<width of output heatmap> --col_size=<height of output heatmap>')
+            print('try other packages: HSD_add_on.py,HSD_batch_run.py,HSD_categories.py')
             sys.exit(0)
         elif opt in ("-f", "--hsd_files_path"):
             hsd_files_path = arg
@@ -196,10 +197,10 @@ def main(argv):
         elif opt in ("-c", "--col_size"):
             col_size = int(arg)
     if hsd_files_path == "":
-        print("No HSD file path. Use hsd_heatmap -h to see argument options")
+        print("No HSD file path. Use hsdecipher -h to see argument options")
         sys.exit(2)
     if ko_files_path == "":
-        print("No KO file path. Use hsd_heatmap -h to see argument options")
+        print("No KO file path. Use hsdecipher -h to see argument options")
         sys.exit(2)
     # print(hsd_files_list)
     # print(ko_files_list)
