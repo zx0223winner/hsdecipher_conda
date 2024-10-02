@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # HSDecipher v1.0
 
 # Copyright 2022 Zhang X., Hu Y., Zhengyu Cheng, Archibald J.M.
